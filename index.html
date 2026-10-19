@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Members</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+    <header class="banner">
+        <h1>Club Members</h1>
+        <p>// SEEKER TERMINAL //</p>
+    </header>
+
+    <form>
+        <label for="first">FIRST NAME</label>
+        <input type="text" id="first" placeholder="INPUT FIRST NAME"> <br><br>
+
+        <label for="surname">LAST NAME</label>
+        <input type="text" id="surname" placeholder="INPUT LAST NAME"> <br><br>
+
+        <input type="button" py-click="add_member" value="ADD">
+    </form>
+
+    <div id="results"></div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
